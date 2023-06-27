@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-div {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.screen-div {
+    height: 150px;
+    width: 100%;
+    margin: 30px 0;
+    background-color: #333;
+    border: 1px solid #ffa500;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.display-div,
+.upper-display-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.display-div{
+    height: 50%;
+    font-size: 3rem;
+}
+
+.upper-display-div{
+    height: 50%;
+    font-size: 2rem;
+}
+
+.buttons-div button {
+    font-size: 1.7rem;
+    appearance: none;
+    border: none;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-div button:hover {
+    background-color: #ccc;
+}
+
+.buttons-div button:active {
+    background-color: #999;
+}
+
+.buttons-div button:focus {
+    outline: none;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.operator-button,
+.equals-button,
+.point-button {
+    font-size: 2rem;
+}
+
+.buttons-div {
+    height: 80%;
+    display: grid;
+    grid-template-areas: 
+    'clear clear back back'
+    'one two three plus'
+    'four five six minus'
+    'seven eight nine mult'
+    'point cero equals divide'
+    ;
+    gap: 10px 10px;
+}
+
+#clear {
+    width: 100%;
+}
+
+#back {
+    width: 100%;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: cero;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#multiply {
+    grid-area: mult;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: #ffa500;
+}
+
+#point {
+    grid-area: point;
+}
+
+#back {
+    grid-area: back;
+}
